@@ -1,0 +1,15 @@
+.navbar-brand {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #0085a1;
+}
+
+.navbar-brand img {
+    display: inline-block;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.gray {
+    color: #888;
+}

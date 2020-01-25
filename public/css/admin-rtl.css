@@ -1,0 +1,35 @@
+* {
+    direction: rtl;
+    text-align: right;
+}
+
+#page-wrapper {
+    margin: 0 250px 0 0;
+    border-left: none;
+    border-right: 1px solid #e7e7e7;
+}
+
+nav#side-menu {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+.navbar-header {
+    float: right;
+}
+
+.text-right {
+    text-align: left;
+}
+
+.text-left {
+    text-align: right;
+}
+
+table.table-bordered th:last-child, table.table-bordered td:last-child {
+    border-right-width: 1px;
+}
+
+.bold {
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'gram' => 'جرام',
+    'kilogram' => 'كيلوجرام',
+    'ton' => 'طن',
+    'product_created' => 'تم تسجيل منتج جديد بنجاح.',
+    'product_updated' => 'تم تحديث المنتج بنجاح.',
+    'settings_updated' => 'تم تحديث البيانات بنجاح.',
+    'video_created' => 'تم تسجيل الفيديو بنجاح.',
+    'video_deleted' => 'تم إزالة الفيدو بنجاج.',
+    'order_pending' => 'تحت المعاينة',
+    'order_in_progress' => 'تحت التنفيذ',
+    'order_finished' => 'تم التسليم',
+    'order_canceled' => 'تم الالغاء',
+    'order_set' => 'تم وضع طلب الشراء بنجاح.',
+    'order_status_changed' => 'تم تغيير حالة طلب الشراء بنجاح',
+    'inquiry_sent' => 'تم إرسال الرسالة بنجاح.',
+    'field' => 'الحقل',
+    'value' => 'القيمة',
+    'regards' => 'مع تحياتى',
+    'hello' => 'مرحبـــا',
+    'contact_intro' => 'قام أحد المستخدمين بإرسال استفسار إليك بالبيانات التاية.',
+    'contact_admin_intro' => 'قام أحد المستخدمين بإرسال رسالة إلى <strong>:user (:email)</strong> بالبيانات التاية.',
+    'copyright' => 'جميع الحقوق محفوظة',
+];

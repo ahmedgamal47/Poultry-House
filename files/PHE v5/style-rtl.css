@@ -1,0 +1,7 @@
+/*-----Start Nav bar ------*/
+.navbar-header{
+    float: right;
+}
+.navbar-brand img{
+    height: 90px;
+}
