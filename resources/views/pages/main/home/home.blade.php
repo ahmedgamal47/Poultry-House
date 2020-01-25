@@ -60,6 +60,67 @@
             updateDropdownMenu( $current, 'center' );
             updateDropdownMenu( $next, 'right' );
         });
+
+        $('.slick-responsive').slick({
+            rtl: true,
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+        $('.slick-responsive').on('afterChange', function(event, slick, currentSlide, nextSlide){
+            //var currentSlide = $('.slick-responsive').slick('slickCurrentSlide');
+            //var currentSlide = $(this.$slides.get(index)).data('caption');
+            var CurrentSlideDom=$(slick.$slides.get(currentSlide));
+            console.log(CurrentSlideDom);
+            $( ".cat-wrapper").each(function(){
+                $(this).removeClass('active');
+            });
+            $(CurrentSlideDom).find('.cat-wrapper').addClass('active').find('a').tab('show');
+        });
+
+        $( ".cat-wrapper" ).click(function() {
+            $( ".cat-wrapper").each(function(){
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+            $(this).find('a').tab('show');
+        });
+
+
+        new WOW().init();
+
+
     })(jQuery);
 </script>
 @stop

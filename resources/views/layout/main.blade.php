@@ -24,8 +24,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css"/>
 
   <!------custom --------->
-  <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
-  <link type="text/css" rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
+  <link rel="stylesheet" href="<?php echo e(asset('css/slick.css')); ?>"/>
+  <link rel="stylesheet" href="<?php echo e(asset('css/slick-theme.css')); ?>"/>
+  <link rel="stylesheet" href="<?php echo e(asset('css/style.css')); ?>"/>
+  <link type="text/css" rel="stylesheet" href="<?php echo e(asset('css/select2.min.css')); ?>">
+  <link rel="stylesheet" href="<?php echo e(asset('css/animate.css')); ?>"/>
 
 </head>
 <body>
@@ -257,6 +260,8 @@
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="<?php echo e(asset('js/slick.min.js')); ?>"></script>
+<script src="<?php echo e(asset('js/wow.min.js')); ?>"></script>
 
 <!--- bootstrap js file ------>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
